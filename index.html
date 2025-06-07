@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mryoom's Cozy Portal</title>
+
+  <!-- 💖 Google Font: Quicksand (clean + soft) -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* 🌈 Background Gradient */
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #fdf1f1, #e6f7ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    /* ✨ Container Styling */
+    .container {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      padding: 40px;
+      max-width: 400px;
+      width: 90%;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .container:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 40px rgba(255, 182, 193, 0.25);
+    }
+
+    /* 💅 Headline */
+    h1 {
+      font-size: 28px;
+      color: #ff6b9a;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      color: #999;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+
+    /* 🧁 Paragraph */
+    p {
+      font-size: 17px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    /* ✨ Subtle Fade-in Animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* 📱 Responsiveness for mobile queens */
+    @media (max-width: 480px) {
+      .container {
+        padding: 25px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+    .button-group {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .cute-btn {
+      background: linear-gradient(145deg, #ffc2d1, #f6e3f9);
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(255, 182, 193, 0.3);
+      transition: all 0.3s ease;
+      font-size: 16px;
+      border: none;
+    }
+
+    .cute-btn:hover {
+      background: linear-gradient(145deg, #fdb3cb, #e3cef7);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(255, 182, 193, 0.4);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome Rashd 💫</h1>
+    <h4>choose wisely :3</h4>
+    <p>u can choose'em all bc I still don't know how to make u choose one only :(</p>
+    <div class="button-group">
+      <a href="page1.html" class="cute-btn">Press here</a>
+      <a href="page2.html" class="cute-btn">A Message for You</a>
+      <a href="page3.html" class="cute-btn">Surprise Page</a>
+    </div>
+  </div>
+
+</body>
+</html>
+
+

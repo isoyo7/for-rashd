@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Surprise</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #fdf1f1, #d0f0ff);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .message-box {
+      background: #fff;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      z-index: 2;
+      max-width: 400px;
+    }
+
+    h2 {
+      color: #e25d92;
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 17px;
+      color: #555;
+    }
+
+    .hearts {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 20px;
+      color: #ff6b9a;
+      animation: floatHeart 5s linear infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes floatHeart {
+      0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1.2);
+        opacity: 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="message-box">
+    <h2>You're the best thing that ever happened to me 💗</h2>
+    <p>Yes you. You're hot, funny, smart, AND you tolerate me?? Bonus boyfriend points. Never forget how loved you are 💘
+        this is what gay gpt said abt u
+    </p>
+  </div>
+
+  <div class="hearts">
+    <!-- Generate 20 random hearts -->
+    <script>
+      for (let i = 0; i < 20; i++) {
+        let heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = (3 + Math.random() * 5) + "s";
+        heart.innerText = "❤️";
+        document.querySelector('.hearts').appendChild(heart);
+      }
+    </script>
+  </div>
+
+</body>
+</html>
